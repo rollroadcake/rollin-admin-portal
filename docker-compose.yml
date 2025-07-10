@@ -15,7 +15,7 @@ services:
             # cache:
             #     condition: service_started
         networks:
-            - directus-network
+            - rollin-network
 
 
     # TO connect with existing rollinbackend db so it will not run
@@ -54,6 +54,6 @@ services:
     #         start_period: 10s
 
 networks:
-  directus-network:
-    name: ${STACK_PRFX}
+  rollin-network:
+    name: rollin
     driver: bridge
